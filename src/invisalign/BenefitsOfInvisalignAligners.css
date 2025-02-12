@@ -1,0 +1,76 @@
+.benefits-container {
+  background: linear-gradient(135deg, #0a2446, #0d3c67);
+  color: white;
+  padding: 2.5rem; /* 40px / 16 */
+  text-align: center;
+  margin: 0 2.75rem 1.25rem 2.75rem; /* 60px / 16, 20px / 16 */
+  border-radius: 0.25rem; /* 4px / 16 */
+}
+
+.benefits-container-two {
+  background: linear-gradient(135deg, #0a2446, #0d3c67);
+  color: white;
+  padding: 1.25rem 2.5rem; /* 20px / 16, 40px / 16 */
+  text-align: left;
+  margin: 2.5rem 6rem 1.25rem 6rem; /* 40px / 16, 140px / 16, 20px / 16 */
+  border-radius: 0.5rem; /* 8px / 16 */
+}
+
+.benefit-items {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px / 16 */
+  margin-bottom: 0.625rem; /* 10px / 16 */
+  padding-bottom: 1.875rem; /* 30px / 16 */
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem; /* 20px / 16 */
+  margin-bottom: 1.25rem; /* 20px / 16 */
+  justify-content: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5rem; /* 24px / 16 */
+  height: 1.5rem; /* 24px / 16 */
+  margin-right: 0.625rem; /* 10px / 16 */
+}
+
+.icon.checkmark {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="%23FFFFFF" d="M9 19L2 12L4.5 9.5L9 14L19.5 3.5L22 6L9 19Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-text {
+  font-size: 1rem; /* 16px / 16 */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .benefits-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .benefits-container {
+      padding: 1.25rem; /* 20px / 16 */
+      margin: 0.4375rem; /* 7px / 16 */
+  }
+
+  .benefits-container-two {
+      padding: 1.25rem; /* 20px / 16 */
+      margin: 1.25rem 0.4375rem; /* 20px / 16, 7px / 16 */
+  }
+}

@@ -1,0 +1,24 @@
+.accordion-item {
+    border: 1px solid #ddd;
+  }
+  
+  .accordion-button {
+    border-bottom: none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-body {
+    border-top: none;
+  }
+
+  .accordion-header{
+    padding-bottom: 0.625rem;
+    
+  }
+
+/* .maincointainerpart {
+   background: url(https://www.asterclinic.ae/assets/h4-CJOtfYXY.jpg);
+} */

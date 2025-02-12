@@ -1,0 +1,125 @@
+.slidercontainer {
+    /* background: whitesmoke; */
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.headingpart {
+    /* background-color: antiquewhite; */
+    color: black;
+    padding: 2.5rem; /* 40px */
+    text-align: center;
+    margin: 0 8.75rem; /* 140px */
+    border-radius: 0.25rem; /* 4px */
+}
+
+.headingpart h2 {
+    font-size: 1.75rem; /* 28px */
+    text-align: center;
+    padding-bottom: 0.5rem; /* 8px */
+    margin-bottom: 0.25rem; /* 4px */
+}
+
+.infopart {
+    /* background-color: antiquewhite; */
+    color: black;
+    padding: 2.5rem; /* 40px */
+    padding-bottom: 0; /* 0px */
+    text-align: center;
+    margin: 0 8.75rem; /* 140px */
+    border-radius: 0.25rem; /* 4px */
+    /* display: none; */
+}
+
+.infopart h2 {
+    padding-bottom: 0; /* 0px */
+    margin-bottom: 0.25rem; /* 4px */
+}
+
+.borderpart {
+    width: 26.25rem; /* 420px */
+    border-bottom-style: solid;
+    border-bottom-width: 0.25rem; /* 4px */
+    border-color: #F16623;
+    margin: 0.5rem auto 0.625rem auto; /* 8px auto 10px auto */
+    /* padding-bottom: 8px; */
+}
+
+.normalpara {
+    text-align: justify;
+    font-size: 1.0625rem; /* 17px */
+}
+
+.boldpara {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.0625rem; /* 17px */
+}
+
+/* Center align images */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Resize images */
+.carousel-item img {
+    width: 21.875rem; /* 350px */
+    height: 15.625rem; /* 250px */
+    object-fit: cover;
+    border-radius: 0.625rem; /* 10px */
+}
+
+/* Space between images */
+.carousel-item img:first-child {
+    margin-right: 0.625rem; /* 10px */
+}
+
+.carousel-item img:last-child {
+    margin-left: 0.625rem; /* 10px */
+}
+
+.carousel-control-next {
+    right: 6.25rem !important; /* 100px */
+}
+.carousel-control-prev {
+    left: 6.25rem !important; /* 100px */
+}
+
+/* Adjust button positions */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Reduce button size */
+}
+
+/* Change the color of the carousel navigation buttons to black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/* Responsive part */
+@media (max-width: 36rem) { /* 576px */
+    .headingpart {
+        padding: 1.25rem; /* 20px */
+        margin: 1.25rem 0.4375rem; /* 20px 7px */
+    }
+
+    .infopart {
+        padding: 1.25rem; /* 20px */
+        margin: 1.25rem 0.4375rem; /* 20px 7px */
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 1.8rem;
+        align-items: center;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none !important; /* Hide navigation buttons in mobile view */
+    }
+}

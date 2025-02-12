@@ -1,0 +1,118 @@
+.maincontainers {
+    /* background: black; */
+    width: 100%;
+    min-height: 100vh; /* Ensure the container adjusts its height according to the content */
+    align-items: center;
+    /* padding-top: 20px; */
+}
+
+.firstPart h3 {
+    font-size: 1.75rem; /* 28px */
+    margin-top: 0.625rem; /* 10px */
+    padding-top: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem; /* 10px */
+    padding-bottom: 1.875rem; /* 30px */
+    text-align: center;
+}
+
+.secondPart h3 {
+    font-size: 1.75rem; /* 28px */
+    margin-top: 0.625rem; /* 10px */
+    padding-top: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem; /* 10px */
+    text-align: center;
+    color: black;
+}
+
+.feature-container {
+    background: linear-gradient(135deg, #5a6b82, #0d3c67);
+    color: white;
+    padding: 2.5rem; /* 40px */
+    text-align: center;
+    border-radius: 0.625rem; /* 10px */
+    margin: 1rem 6rem 1rem 6rem; /* 16px 96px 16px 96px */
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.1875rem; /* 35px */
+    flex-wrap: wrap;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.feature-grid span {
+    font-size: 1.375rem; /* 22px */
+    white-space: nowrap;
+}
+
+.divider {
+    width: 0.0625rem; /* 1px */
+    height: 1.125rem; /* 18px */
+    background-color: white;
+}
+
+.anothercontainer {
+    background: whitesmoke;
+    color: white;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+    border-radius: 0.625rem; /* 10px */
+    margin: 2.5rem 6rem 1.25rem 6rem; /* 40px 96px 20px 96px */
+    display: flex;
+    height: fit-content;
+}
+
+.anothercontainer img {
+    width: 31.25rem; /* 500px */
+    height: 31.25rem; /* 500px */
+    border-radius: 0.5rem; /* 8px */
+}
+
+.textpart {
+    color: #000; /* Dark blue text */
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 37.5rem; /* 600px */
+    margin: 1.25rem; /* 20px */
+    text-align: left;
+}
+
+.textpart h2 {
+    font-size: 1.75rem; /* 28px */
+    color: #000;
+}
+
+@media (max-width: 36rem) { /* 576px */
+    .feature-grid {
+        flex-direction: column;
+        gap: 0.5rem; /* 8px */
+    }
+
+    .feature-grid span {
+        font-size: 1.1rem;
+    }
+
+    .divider {
+        width: 5rem; /* 80px */
+        height: 0.125rem; /* 2px */
+    }
+
+    .feature-container {
+        padding: 1.25rem; /* 20px */
+        margin: 1.25rem 0.4375rem; /* 20px 7px */
+    }
+
+    .anothercontainer {
+        padding: 0.625rem; /* 10px */
+        margin: 1.25rem 0.4375rem; /* 20px 7px */
+        flex-direction: column;
+    }
+
+    .anothercontainer img {
+        width: auto;
+        height: 25rem; /* 400px */
+    }
+}

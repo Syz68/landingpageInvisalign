@@ -1,0 +1,94 @@
+.HeroInfo {
+    width: 100%;
+    height: fit-content;
+    /* background-color: gray; */
+    /* margin-top: 20px; */
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 2rem;
+}
+
+.HeroInfo h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: bottom 1rem;;
+}
+
+.contentpart {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentpart img {
+    width: 50rem; /* 800px / 16 */
+    height: 37.5rem; /* 600px / 16 */
+    max-width: 50rem;
+    max-height: 30.5rem;
+    object-fit: cover;
+    margin-right: 1.25rem; /* 20px / 16 */
+    border-radius: 0.625rem; /* 10px / 16 */
+}
+
+
+.textpartsection {
+    /* font-family: Arial, sans-serif; */
+    color: #1D2C4B; /* Dark blue text */
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px; /* Adjust width as needed */
+    margin: 20px;
+}
+
+.textpartsection h2 {
+    font-size: 28px;
+    color: #F16623;
+    padding-bottom: 10px;
+}
+
+/* Icon Styling */
+.icon {
+    color: #5A49D9; /* Purple checkmark */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Bold Titles */
+strong {
+    color: #2D2D64; /* Slightly darker blue */
+}
+
+/* Description Text */
+.description {
+    margin-top: 10px;
+    color: #1D2C4B;
+
+}
+
+
+@media (max-width: 576px) {
+
+    .contentpart {
+        flex-direction: column;
+    }
+
+    .HeroInfo h1 {
+        font-size: 18px;
+    }
+
+    .contentpart img {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        align-items: center;
+        
+    }
+
+    .textpart {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 600px; /* Adjust width as needed */
+        margin: 20px;
+    }
+    
+
+}
